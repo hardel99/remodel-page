@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hover effet</title>
+
+  <style>
+    .hhv{
+      position: relative;
+      width: 60%;
+    }
+
+    .muestra{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .oculto{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .hhv:hover .oculto{
+      opacity: 1;
+    }
+
+    .c_oc{
+      color: white;
+      font-size: 20px;
+      font-family: sans-serif;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="hhv">
+    <img src="img/leycos2.jpg" alt="Muestra" class="muestra">
+    <div class="oculto">
+      <div class="c_oc">Sorprise!</div>
+    </div>
+  </div>
+</body>
+</html>
